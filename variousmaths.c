@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-// This program will allow the users to type in two numbers, and choose what kind
-// of math operation to use.
+/* This program will allow the users to type in two numbers, and choose what kind
+ of math operation to use.*/
 
 
 int main () {
@@ -13,16 +13,19 @@ int main () {
 	// This comes in later, store the type of math the user would like.
 	int mathtype;
 
-	printf("\nLet's get started! Type a number: ");
+	printf("\nLet's get started! Type a number: "); /* User types in the first number. */
 	scanf("%d", &numberone);
 
-	printf("\nGood stuff! Type in another number: ");
+	printf("\nGood stuff! Type in another number: "); /* Then another number. */
 	scanf("%d", &numbertwo);
 
 	printf("\nLast question, I promise! Would you like to add, subtract, multiply, or divide? (type 1, 2, 3, or 4 respectively.): ");
 	scanf("%d", &mathtype);
 	printf("%d\n", mathtype);
 
+	/* I don't like this solution of determining what operation the user wants to use. Due to how
+	 * C works, I have to associate the different types with a number, and not a string. But
+	 * it works fine for now. */
 
 		if (mathtype == 1) {
 		
@@ -77,14 +80,15 @@ int main () {
 			}
 
 
-		else {
+
+/*		else {
 			printf("\nI am sorry, but option: ");
 			printf("%d", mathtype);
 			printf(" is not valid. Please choose either 1, 2, 3, or 4. Exiting...\n");
 
 
 		}
-
+*/
 	return 0;
 
 
